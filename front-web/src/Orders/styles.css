@@ -9,7 +9,7 @@
 .orders-steps-container {
   display: flex;
   justify-content: center;
-  background-color: #FFF;
+  background-color: #fff;
   margin-bottom: 30px;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .order-card-container {
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 15px;
@@ -72,7 +72,7 @@
 }
 
 .order-card-container.selected {
-  border: 4px solid #008E5B;
+  border: 4px solid #008e5b;
   box-sizing: border-box;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -92,7 +92,7 @@
 }
 
 .order-card-container.selected .order-card-title {
-  color: #008E5B;
+  color: #008e5b;
 }
 
 .order-card-image {
@@ -112,11 +112,11 @@
 }
 
 .order-card-container.selected .order-card-price {
-  color: #008E5B;
+  color: #008e5b;
 }
 
 .order-card-description {
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #e6e6e6;
   margin-top: 15px;
   padding-top: 15px;
 }
@@ -147,7 +147,7 @@
   margin: 30px 0 120px 0;
   padding: 20px 0;
   height: 400px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
@@ -194,11 +194,11 @@
   width: calc(70% - 40px);
   display: flex;
   justify-content: space-between;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   background-color: var(--primary-color);
-  color: #FFF;
+  color: #fff;
   padding: 20px;
 }
 
@@ -224,7 +224,7 @@
   font-size: 14px;
   line-height: 15px;
   letter-spacing: -0.015em;
-  color: #FFF;
+  color: #fff;
   display: block;
 }
 
@@ -233,14 +233,14 @@
   font-size: 18px;
   line-height: 19px;
   letter-spacing: -0.015em;
-  color: #FFF;
+  color: #fff;
   margin-right: 5px;
 }
 
 .order-summary-make-order {
   width: 220px;
   height: 45px;
-  background: #FFF;
+  background: #fff;
   border-radius: 10px;
   font-weight: bold;
   font-size: 18px;
@@ -270,7 +270,7 @@
   }
 
   .steps-items {
-    padding: 0
+    padding: 0;
   }
 
   .order-location-content {

@@ -1,26 +1,27 @@
+import { useEffect, useState } from "react";
+import { fetchProducts } from "../api";
+import ProductsList from "./ProductsList";
+import StepsHeader from "./StepsHeader";
 import "./styles.css";
+import { Product } from "./types";
 
-function StepsHeader() {
+function Orders() {
+  const [products, setProducts] = useState<Product[]>([]);
+  console.log(products);
+
+  useEffect(() => {
+    fetchProducts()
+      .then(response => setProducts(response.data))
+      .catch(error => console.log(error))
+  }, []);
+  
+
   return (
-    <header className="orders-steps-container">
-      <div className="orders-steps-content">
-        <h1 className="steps-title">
-          SIGA AS <br />
-          ETAPAS
-        </h1>
-        <ul className="steps-items">
-          <li>
-            <span className="steps-number">1</span>           
-            Selecione os produtos e localização
-          </li>
-          <li>
-            <span className="steps-number">2</span>
-            Depois clique em <strong>ENVIAR PEDIDO</strong>
-          </li>
-        </ul>
-      </div>
-    </header>
+    <div className="orders-container">
+      <StepsHeader />
+      <ProductsList products={products} />
+    </div>
   );
 }
 
-export default StepsHeader;
+export default Orders;
