@@ -6,9 +6,11 @@ import Header from "../Header";
 
 function Home() {
   const navigation = useNavigation();
+  
   const handleOnPress = () => {
     navigation.navigate('Orders');
   };
+
   return (
     <>
       <Header />
